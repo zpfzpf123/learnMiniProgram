@@ -5,9 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name:'zpf',
+    students:[
+      {id:1,name:"cobe",age:30},
+      {id:2,name:"james",age:31},
+      {id:3,name:"curry",age:32},
+      {id:4,name:"zpf",age:21}
+    ],
+    counter:0
   },
-
+  addcounter(){
+    this.setData({
+      counter:this.data.counter+1
+    })
+  },
+  subcounter(){
+    this.setData({
+      counter:this.data.counter-1
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
